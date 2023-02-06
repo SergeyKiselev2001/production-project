@@ -1,11 +1,10 @@
-import { lazy, Suspense, useContext, useState } from "react";
+import { Suspense } from "react";
 import { Link, Route, Routes } from "react-router-dom";
-import { classNames } from "./helpers/classNames/classNames";
 import './styles/index.scss';
-import { useTheme } from "./theme/useTheme";
-const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
-const MainPage = lazy(() => import("./pages/MainPage/MainPage"));
-
+import { useTheme } from "app/providers/ThemeProvider";
+import { AboutPage } from "pages/AboutPage";
+import { MainPage } from "pages/MainPage";
+import { classNames } from "shared/lib/helpers/classNames/classNames";
 
 export const App = () => {
 
