@@ -4,11 +4,11 @@ export const classNames = (
   additional: string[] = ['']
 ): string => {
 
-  let result = [
+  const result = [
     cls,
     ...additional.filter(Boolean),
-    ...Object.entries(mods).map(el => Boolean(el[1]) ? el[0]: '').filter(Boolean)
-  ];
+    ...Object.entries(mods).map(el => el[1] ? el[0]: '').filter(Boolean)
+  ]
 
-  return result.join(" ");
-};
+  return result.join(' ')
+}
