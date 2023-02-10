@@ -17,9 +17,8 @@ export const Button: FC<ButtonProps> = (props) => {
 
   const { className, children, theme = ThemeButton.CLEAR, ...otherProps} = props
   return (
-    <button {...otherProps} className={classNames(cls.themeSwitcher, {}, [className, cls[theme]])}>
+    <button {...otherProps} className={classNames(cls.button, {}, [className, cls[theme]])}>
       { children }
-
     </button>
   )
 }
