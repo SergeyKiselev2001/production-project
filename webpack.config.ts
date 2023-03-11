@@ -19,7 +19,8 @@ export default (env: EnvOptions) => {
     mode,
     paths,
     isDev,
-    port: PORT
+    port: PORT,
+    runAnalizer: true,
   })
 
   return config

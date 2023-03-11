@@ -12,6 +12,7 @@ export interface BuildOptions {
   paths: BuildPaths;
   isDev: boolean;
   port: number;
+  runAnalizer: boolean;
 }
 
 export interface EnvOptions {
