@@ -64,7 +64,8 @@ export default {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  moduleDirectories: ['node_modules'],
+  moduleDirectories: ['node_modules', 'src'],
+  modulePaths: ['<rootDir>/src'],
 
   // An array of file extensions your modules use
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
@@ -135,9 +136,7 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: [
-    '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
-  ],
+  testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
